@@ -28,3 +28,9 @@ Follow these instructions to build and serve a web page that hosts Algolia searc
 1. Open the page and try it out
    * Open the browser to <http://localhost:1234>.
    * Search for something, like "Node.js". The page is making requests to the Algolia servers to execute the search. 
+
+
+## Reference
+
+* [Algolia](https://www.algolia.com/)
+* [Algolia API Reference: *React InstantSearch Hooks*](https://www.algolia.com/doc/api-reference/widgets/react-hooks)
