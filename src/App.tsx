@@ -14,21 +14,12 @@ const searchClient = algoliasearch(MY_APP_ID, MY_API_KEY);
 
 export function App() {
     return (
-        <div className="container">
-            <InstantSearch searchClient={searchClient} indexName="algolia_blog_demo_index">
-                <Configure hitsPerPage={8}/>
-                <div className="search-panel">
-                    <div className="search-panel__results">
-                        <SearchBox placeholder="" className="searchbox"/>
-                        <Hits hitComponent={Hit}/>
-
-                        <div className="pagination">
-                            <Pagination/>
-                        </div>
-                    </div>
-                </div>
-            </InstantSearch>
-        </div>
+        <InstantSearch searchClient={searchClient} indexName="algolia_blog_demo_index">
+            <Configure hitsPerPage={8}/>
+            <SearchBox placeholder="" className="searchbox"/>
+            <Hits hitComponent={Hit}/>
+            <Pagination/>
+        </InstantSearch>
     );
 }
 
