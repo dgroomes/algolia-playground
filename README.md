@@ -7,7 +7,7 @@
 > -- <cite>https://www.algolia.com/</cite>
 
 
-## Description
+## Overview
 
 This project was scaffolded with Algolia's official tool: [create-instantsearch-app](https://github.com/algolia/create-instantsearch-app)
 and then I adapted it to my typical style.
@@ -17,15 +17,17 @@ and then I adapted it to my typical style.
 
 Follow these instructions to build and serve a web page that hosts Algolia search controls:
 
-1. Install dependencies:
+1. Pre-requisite: Node.js
+   * I used version 18.17.1
+2. Install dependencies:
    * ```shell
      npm install
      ```
-1. Build and serve the page continuously with the development server:
+3. Build and serve the page continuously with the development server:
    * ```shell
      npm start
      ```
-1. Open the page and try it out
+4. Open the page and try it out
    * Open the browser to <http://localhost:1234>.
    * Search for something, like "Node.js". The page is making requests to the Algolia servers to execute the search. 
 
