@@ -39,13 +39,18 @@ Follow these instructions to build and serve a web page that hosts Algolia searc
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* [ ] IN PROGRESS Facet search. What does facet search look like on the UI-side using the InstantSearch library? What config do I
+* [x] DONE Facet search. What does facet search look like on the UI-side using the InstantSearch library? What config do I
   need to do on the server-side (the Algolia index)?
   * This is generally called "Refinements" in the Algolia documentation.
   * Related docs: [*Facet Display in React InstantSearch*](https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/facet-display/react/)
   * DONE Configure "author_name" as an attributing for faceting in the Algolia index configuration via the Algolia dashboard.
   * DONE Add a "RefinementList" widget to the InstantSearch configuration.
-  * Style the refinement list. It's appearing at the bottom of the page.
+  * DONE Style the refinement list. It's appearing at the bottom of the page.
+* [ ] [Structured results](https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/structured-results/react/).
+  This is more of a concept than a technology. I just to show the "category". Well, maybe I can style
+  certain categories different, and that counts as structured. Anyway, the idea of making certain attributes pop in a
+  search result and making differentiated results is interesting.
+* [ ] Can Parcel splice in some values to my index.html (or maybe .tsx files)? Hard coding the key is not idea.
 
 
 ## Reference

@@ -16,10 +16,12 @@ export function App() {
     return (
         <InstantSearch searchClient={searchClient} indexName="algolia_blog_demo_index">
             <Configure hitsPerPage={8}/>
-            <SearchBox placeholder="" className="searchbox"/>
-            <Hits hitComponent={Hit}/>
-            <Pagination/>
-            <RefinementList attribute="author_name" />
+            <RefinementList attribute="author_name" className="sidebar" />
+            <div className="main-content">
+                <SearchBox placeholder="" className="searchbox"/>
+                <Hits hitComponent={Hit}/>
+                <Pagination className="pagination"/>
+            </div>
         </InstantSearch>
     );
 }

@@ -1,5 +1,27 @@
 body {
   margin: 0;
   padding: 30px 100px;
-  font-family: Helvetica, sans-serif
+  font-family: Helvetica, sans-serif;
 }
+
+#root {
+  display: flex;
+}
+
+.sidebar {
+  padding: 1rem;
+}
+
+.main-content {
+  flex: 1;
+}
+
+.searchbox {
+  margin-bottom: 2rem;
+}
+
+.pagination {
+  margin: 2rem auto;
+}
+
+
