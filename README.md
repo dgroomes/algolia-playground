@@ -50,7 +50,8 @@ General clean-ups, TODOs and things I wish to implement for this project:
   This is more of a concept than a technology. I just to show the "category". Well, maybe I can style
   certain categories different, and that counts as structured. Anyway, the idea of making certain attributes pop in a
   search result and making differentiated results is interesting.
-* [ ] Can Parcel splice in some values to my index.html (or maybe .tsx files)? Hard coding the key is not idea.
+* [x] DONE Can Parcel splice in some values to my index.html (or maybe .tsx files)? Hard coding the key is not idea.
+  * [Parcel docs: *Environment Variables*](https://en.parceljs.org/env.html)
 
 
 ## Reference

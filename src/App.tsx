@@ -7,10 +7,9 @@ import './App.css';
 
 // Algolia app IDs and API keys are not exactly secrets because they are used client-side where anyone can see them. But
 // I might still consider omitting them from version control.
-const MY_APP_ID = '';
-const MY_API_KEY = '';
+const {ALGOLIA_APP_ID, ALGOLIA_API_KEY} = process.env;
 
-const searchClient = algoliasearch(MY_APP_ID, MY_API_KEY);
+const searchClient = algoliasearch(ALGOLIA_APP_ID, ALGOLIA_API_KEY);
 
 export function App() {
     return (
