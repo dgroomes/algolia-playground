@@ -30,7 +30,7 @@ Follow these instructions to build and serve a web page that hosts Algolia searc
    * ```shell
      npm start
      ```
-*5. Open the page and try it out
+5. Open the page and try it out
    * Open the browser to <http://localhost:1234>.
    * Search for something, like "Node.js". The page is making requests to the Algolia servers to execute the search. 
 
@@ -39,9 +39,13 @@ Follow these instructions to build and serve a web page that hosts Algolia searc
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* [ ] Facet search. What does facet search look like on the UI-side using the InstantSearch library? What config do I
+* [ ] IN PROGRESS Facet search. What does facet search look like on the UI-side using the InstantSearch library? What config do I
   need to do on the server-side (the Algolia index)?
   * This is generally called "Refinements" in the Algolia documentation.
+  * Related docs: [*Facet Display in React InstantSearch*](https://www.algolia.com/doc/guides/building-search-ui/ui-and-ux-patterns/facet-display/react/)
+  * DONE Configure "author_name" as an attributing for faceting in the Algolia index configuration via the Algolia dashboard.
+  * DONE Add a "RefinementList" widget to the InstantSearch configuration.
+  * Style the refinement list. It's appearing at the bottom of the page.
 
 
 ## Reference

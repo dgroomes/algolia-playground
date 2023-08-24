@@ -1,5 +1,5 @@
 import algoliasearch from 'algoliasearch/lite';
-import {Configure, Highlight, Hits, InstantSearch, Pagination, SearchBox,} from "react-instantsearch";
+import {Configure, Highlight, Hits, InstantSearch, Pagination, SearchBox, RefinementList} from "react-instantsearch";
 
 import type {Hit} from 'instantsearch.js';
 
@@ -19,6 +19,7 @@ export function App() {
             <SearchBox placeholder="" className="searchbox"/>
             <Hits hitComponent={Hit}/>
             <Pagination/>
+            <RefinementList attribute="author_name" />
         </InstantSearch>
     );
 }
